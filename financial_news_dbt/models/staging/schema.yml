@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_earnings
+    description: "Cleaned earnings data from Alpha Vantage API"
+    columns:
+      - name: ticker
+        description: "Stock ticker symbol"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['AAPL','MSFT','GOOGL','AMZN','META',
+                       'TSLA','JPM','GS','NFLX','NVDA']
+      - name: fiscal_date
+        description: "End date of the fiscal period"
+        tests:
+          - not_null
+      - name: total_revenue
+        description: "Total revenue in USD"
+
+  - name: stg_news_articles
+    description: "Cleaned news headlines from NewsAPI"
+    columns:
+      - name: ticker
+        description: "Stock ticker symbol this article relates to"
+        tests:
+          - not_null
+      - name: headline
+        description: "Article headline text"
+        tests:
+          - not_null
+      - name: published_at
+        description: "When the article was published"
+        tests:
+          - not_null

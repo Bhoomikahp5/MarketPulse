@@ -1,0 +1,34 @@
+[0m11:58:06.227137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103a21a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bab610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bab890>]}
+
+
+============================== 11:58:06.229740 | 92c58ac1-d550-4244-b92f-58c598a84ce4 ==============================
+[0m11:58:06.229740 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:58:06.229986 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'quiet': 'False', 'target_path': 'None', 'log_path': 'logs', 'log_cache_events': 'False', 'partial_parse': 'True', 'log_format': 'default', 'fail_fast': 'False', 'version_check': 'True', 'warn_error': 'None', 'empty': 'None', 'debug': 'False', 'printer_width': '80', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'invocation_command': 'dbt init financial_news_dbt', 'profiles_dir': '/Users/bhoomikahanbalputtaswamy/.dbt', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:58:06.240554 [info ] [MainThread]: Creating dbt configuration folder at /Users/bhoomikahanbalputtaswamy/.dbt
+[0m11:58:06.241451 [debug] [MainThread]: Starter project path: /Users/bhoomikahanbalputtaswamy/Documents/financial-news-pipeline/venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m11:58:06.244294 [info ] [MainThread]: 
+Your new dbt project "financial_news_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:58:06.244427 [info ] [MainThread]: Setting up your profile.
+[0m12:00:31.885764 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:00:31.886326 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:00:31.886446 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:03:01.511254 [info ] [MainThread]: Profile financial_news_dbt written to /Users/bhoomikahanbalputtaswamy/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:03:01.579832 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 295.38037, "process_in_blocks": "0", "process_kernel_time": 0.173465, "process_mem_max_rss": "131891200", "process_out_blocks": "0", "process_user_time": 0.684575}
+[0m12:03:01.582883 [debug] [MainThread]: Command `dbt init` succeeded at 12:03:01.582699 after 295.38 seconds
+[0m12:03:01.583814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c88640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104aac170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b5ff00>]}
+[0m12:03:01.584389 [debug] [MainThread]: Flushing usage events
+[0m12:03:01.879572 [debug] [MainThread]: An error was encountered while trying to flush usage events
